@@ -1,0 +1,20 @@
+---
+const { text = "Aceptar", isRounded = false, img } = Astro.props;
+---
+
+<button
+    class:list={[
+        "bg-blue-500",
+        "text-white",
+        { rounded: isRounded },
+        "px-2",
+        "pt-1",
+        "pb-2",
+        "hover:bg-blue-600",
+        "transition-colors",
+    ]}
+
+    class={`${img}`}
+>
+    <h3>{text}</h3>
+</button>
