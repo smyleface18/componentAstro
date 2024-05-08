@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Button from  '../components/Button.astro';
 import ButtonTwo from '../components/ButtonTwo.astro';
+import Counter from '../components/vue/Counter.vue';
 ---
 
 <Layout title="Welcome to Astro.">
@@ -16,6 +17,8 @@ import ButtonTwo from '../components/ButtonTwo.astro';
 			<span slot="text">este es el boton</span>
 			<span slot="icon" >XXXXXX</span>
 		</ButtonTwo>
+
+		<Counter client:load></Counter>
 
 	</main>
 
