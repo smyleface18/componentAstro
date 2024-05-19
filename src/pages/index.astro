@@ -3,11 +3,16 @@ import Layout from '../layouts/Layout.astro';
 import Button from  '../components/Button.astro';
 import ButtonTwo from '../components/ButtonTwo.astro';
 import Counter from '../components/vue/Counter.vue';
+import List from '../components/vue/List.vue';
+import ViewList from '../components/vue/ViewList.vue';
+import Hola from '../components/vue/Hola.vue';
+import Palindromo from '../components/vue/Palindromo.vue';
+import Person from '../components/vue/Person.vue';
 ---
 
 <Layout title="Welcome to Astro.">
 
-	<main>
+	<main class="w-screen">
 		<Button text="Cancelar" isRounded/>
 		<Button text="Permitir"/>
 		<Button img="https://cdn-icons-png.flaticon.com/512/2175/2175188.png"/>
@@ -19,6 +24,16 @@ import Counter from '../components/vue/Counter.vue';
 		</ButtonTwo>
 
 		<Counter client:load></Counter>
+		<List client:load></List>
+		<ViewList class="w-screen flex justify-center flex-col items-center mt-10" client:load></ViewList>
+		<Hola client:load></Hola>
+		<Palindromo client:load ></Palindromo>
+		<div class="mt-10 w-screen">
+			<div class="mx-auto w-[300px] bg-green-400">
+				<Person client:load></Person>
+			</div>
+
+		</div>
 
 	</main>
 
