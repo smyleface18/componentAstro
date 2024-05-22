@@ -8,6 +8,8 @@ import ViewList from '../components/vue/ViewList.vue';
 import Hola from '../components/vue/Hola.vue';
 import Palindromo from '../components/vue/Palindromo.vue';
 import Person from '../components/vue/Person.vue';
+import TextColor from '../components/vue/TextColor.vue';
+import Msg from '../components/vue/Msg.vue';
 ---
 
 <Layout title="Welcome to Astro.">
@@ -35,6 +37,18 @@ import Person from '../components/vue/Person.vue';
 
 		</div>
 
+		<div class="mt-10 w-screen">
+			<div class="mx-auto w-[300px] bg-yellow-400">
+				<TextColor client:load></TextColor>
+			</div>
+
+		</div>
+		<div class="mt-10 w-screen">
+			<div class="mx-auto w-[300px] bg-yellow-400">
+				<Msg client:load></Msg>
+			</div>
+
+		</div>
 	</main>
 
 </Layout>
