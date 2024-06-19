@@ -10,11 +10,12 @@ import Palindromo from '../components/vue/Palindromo.vue';
 import Person from '../components/vue/Person.vue';
 import TextColor from '../components/vue/TextColor.vue';
 import Msg from '../components/vue/Msg.vue';
+import RickMorty from '../components/vue/RickMorty.vue';
 ---
 
 <Layout title="Welcome to Astro.">
 
-	<main class="w-screen">
+	<main class="w-screen flex flex-col items-center justify-center">
 		<Button text="Cancelar" isRounded/>
 		<Button text="Permitir"/>
 		<Button img="https://cdn-icons-png.flaticon.com/512/2175/2175188.png"/>
@@ -45,10 +46,13 @@ import Msg from '../components/vue/Msg.vue';
 		</div>
 		<div class="mt-10 w-screen">
 			<div class="mx-auto w-[300px] bg-yellow-400">
-				<Msg client:load></Msg>
+				<Msg client:load title="sdddddddddddd" link='../../public/wallpaper.jpg' ></Msg>
+
 			</div>
 
 		</div>
+
+		<RickMorty client:load></RickMorty>
 	</main>
 
 </Layout>
